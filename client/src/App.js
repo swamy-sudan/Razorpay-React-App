@@ -29,7 +29,7 @@ async function displayRazorpay() {
   }
 
   // creating a new order
-  const result = await axios.post("http://localhost:5000/payment/orders");
+  const result = await axios.post("http://localhost:3000/payment/orders");
 
   if (!result) {
       alert("Server error. Are you online?");
